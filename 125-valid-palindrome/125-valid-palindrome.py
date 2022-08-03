@@ -9,7 +9,8 @@ class Solution:
         s = ''.join(filter(str.isalnum, s))
         s = s.lower()
         reverse = s[::-1]
-        
+        return s == reverse
+    
         '''
         i, j = 0, len(s)-1
         Answer = True
@@ -22,5 +23,5 @@ class Solution:
                
         return Answer
         '''
-        return s == reverse
+        
         
