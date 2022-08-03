@@ -11,7 +11,7 @@ class Solution:
         reverse = s[::-1]
         
         '''
-                i, j = 0, len(s)-1
+        i, j = 0, len(s)-1
         Answer = True
         while i < j:
             if s[i] == s[j]:
