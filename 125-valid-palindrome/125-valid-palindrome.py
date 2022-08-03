@@ -10,5 +10,17 @@ class Solution:
         s = s.lower()
         reverse = s[::-1]
         
+        '''
+                i, j = 0, len(s)-1
+        Answer = True
+        while i < j:
+            if s[i] == s[j]:
+                i += 1
+                j -= 1
+            else:
+                Answer = False
+               
+        return Answer
+        '''
         return s == reverse
         
