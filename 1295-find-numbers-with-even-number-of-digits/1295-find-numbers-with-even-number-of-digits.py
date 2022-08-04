@@ -7,6 +7,5 @@ class Solution:
                 
         return count'''
     
-        count=0
         lst = [i for i in nums if len(str(i))%2 ==0]
         return len(lst)
