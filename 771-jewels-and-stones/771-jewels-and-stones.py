@@ -11,7 +11,7 @@ class Solution:
         
         return result
         
-        '''
+        ''' #풀이법2
         jewelsList=list(jewels)
         stoneList=list(stones)
         
