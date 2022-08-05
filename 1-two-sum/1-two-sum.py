@@ -1,6 +1,18 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:    
         
+        # hash table 풀이방법
+        hashtable = dict()
+        for i, value in enumerate(nums):
+            hashtable[value] =i
+            
+        pairs = [target-num for num in nums]
+        
+        for i, pair in enumerate(pairs):
+            if pair in hashtable and i != hashtable[pair]:
+                return [i, hashtable[pair]]
+        
+        '''
         # enumerate 풀이방법
         pairs = [target - num for num in nums] # nums = [2,7,11,15] -> pairs = [7,2,-2,-6]
         
@@ -8,7 +20,7 @@ class Solution:
             
             if pair in nums and i != nums.index(pair): #pair가 nums의 요소이고, key값이 nums에서 pair의 인덱스값과                                                                      다르면
                 return [i, nums.index(pair)]
-        
+        '''
 
         
         '''
