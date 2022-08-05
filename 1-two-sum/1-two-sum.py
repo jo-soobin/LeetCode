@@ -9,7 +9,7 @@ class Solution:
         pairs = [target-num for num in nums] #pairs = [7,2,-2,-6]
         
         for i, pair in enumerate(pairs): #(0,7),(1,2),(2,-2),(3,-6)
-            if pair in hashtable and i != hashtable[pair]: # 7,2,-2,-6 in hatable and                                                                                            0,1,2,3 != hashtable[7.2.-2.-6]
+            if pair in hashtable and i != hashtable[pair]: # 7,2,-2,-6 in hashtable and                                                                                          0,1,2,3 != hashtable[7.2.-2.-6]
                 return [i, hashtable[pair]]
         
         '''
