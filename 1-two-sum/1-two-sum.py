@@ -3,13 +3,13 @@ class Solution:
         
         # hash table 풀이방법
         hashtable = dict()
-        for i, value in enumerate(nums):
-            hashtable[value] =i
+        for i, value in enumerate(nums): #(0,2),(1,7),(2,11),(3,15)
+            hashtable[value] = i #hashtable[2] = 0, hashtable[7] = 1, hashtable[11] = 2, hashtable[15] = 3
             
-        pairs = [target-num for num in nums]
+        pairs = [target-num for num in nums] #pairs = [7,2,-2,-6]
         
-        for i, pair in enumerate(pairs):
-            if pair in hashtable and i != hashtable[pair]:
+        for i, pair in enumerate(pairs): #(0,7),(1,2),(2,-2),(3,-6)
+            if pair in hashtable and i != hashtable[pair]: # 7,2,-2,-6 in hatable and                                                                                            0,1,2,3 != hashtable[7.2.-2.-6]
                 return [i, hashtable[pair]]
         
         '''
