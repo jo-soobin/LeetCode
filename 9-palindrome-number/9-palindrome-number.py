@@ -3,7 +3,7 @@ class Solution:
         
         dec = False
         if x < 0:
-            dec=False
+            return dec
         else:
             original=x
             reverse=0
