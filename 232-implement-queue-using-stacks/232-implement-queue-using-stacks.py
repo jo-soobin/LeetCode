@@ -13,7 +13,9 @@ class MyQueue:
         return self.lst[0]     
 
     def empty(self) -> bool:
-        return len(self.lst) ==0
+        while len(self.lst) == 0:
+            return True
+        #return len(self.lst) ==0
         
 
 
