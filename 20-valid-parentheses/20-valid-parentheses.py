@@ -1,12 +1,12 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        inputlst=list(s)
+        inputlst = list(s)
         lst = []
         for i in inputlst:
             if i in ['(','{','[']:
                 lst.append(i)
             else:
-                if len(lst) == 0:
+                if len(lst) ==0:
                     return False
                 if lst[len(lst)-1] == '(' and i == ')':
                     lst.pop()
@@ -20,4 +20,3 @@ class Solution:
         if len(lst)>0:
             return False
         return True
-    
