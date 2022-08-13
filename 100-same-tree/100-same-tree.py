@@ -1,10 +1,5 @@
 class Solution:
-    def isSameTree(self, p, q):
-        """
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: bool
-        """    
+    def isSameTree(self, p, q):   
         # p and q are both None
         if not p and not q:
             return True
