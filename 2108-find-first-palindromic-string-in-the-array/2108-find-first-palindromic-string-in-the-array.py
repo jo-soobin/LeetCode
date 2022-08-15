@@ -13,7 +13,7 @@ class Solution:
             if self.checkPalindrome(s):
                 return s
             
-        return ""
+        return ''
     
         '''
         answer = ""
