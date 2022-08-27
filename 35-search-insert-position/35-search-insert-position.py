@@ -9,7 +9,6 @@ class Solution:
                 right=mid-1
             elif nums[mid]<target: # Search to right 
                 left=mid+1   
-            else: # Correct
+            else: 
                 return mid
-        # Incorrect
         return left
